@@ -40,17 +40,13 @@ export PATH
 # Mysql Alias
 alias mysqld="mysql -h 127.0.0.1 -P 55001 -u root -proot#root"
 
-alias ll="ls -alh"
+alias ll="ls -la --time-style=+ | awk '{print $1, $3, $4, $9}'"
 alias f="fzf"
 alias cd="z"
 eval "$(zoxide init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-alias gml_fmt="./gml_fmt"
 alias splice="~/scripts/manageSamples.sh"
 alias reload="source ~/.zshrc"
-alias jbuild="cd ../ && javac @options @classes && cd compiled"
-alias jrun="jbuild && java Main"
-alias run="./gradlew desktop:run"
 alias myShortcuts='python3 /Users/home/.aEcho/main.py'
 alias gitroot='cd $(git rev-parse --show-toplevel)'
 alias python='python3'
@@ -58,9 +54,8 @@ alias sql='mysql -h 127.0.0.1 -P 3306 -u root -proot#root'
 alias showhosts='sudo nvim /private/etc/hosts'
 alias showzsh='nvim ~/.zshrc'
 alias start='watchexec -Nri "./bin/**" ./run.sh'
-alias newc='~/scripts/newc.sh'
+alias newc='~/source/scripts/newc.sh'
 
-alias csvCompile="gcc -o ~/Documents/Code/C/csvParser/csvParser ~/Documents/Code/C/csvParser/Main.c"
 . "$HOME/.cargo/env"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
