@@ -41,6 +41,7 @@ export PATH
 alias mysqld="mysql -h 127.0.0.1 -P 55001 -u root -proot#root"
 
 alias ll="eza -al"
+alias ls="eza"
 alias f="fzf"
 alias cd="z"
 eval "$(zoxide init zsh)"
