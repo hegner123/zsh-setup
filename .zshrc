@@ -40,7 +40,7 @@ export PATH
 # Mysql Alias
 alias mysqld="mysql -h 127.0.0.1 -P 55001 -u root -proot#root"
 
-alias ll="ls -la --time-style=+ | awk '{print $1, $3, $4, $9}'"
+alias ll="eza -al"
 alias f="fzf"
 alias cd="z"
 eval "$(zoxide init zsh)"
