@@ -9,18 +9,10 @@ source $ZSH/oh-my-zsh.sh
 # WebAssembly Decompiler
 export PATH="$HOME/Documents/repos/wabt/bin:$PATH"
 
-# Node version manager
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Meteor Path
-export PATH=/Users/home/.meteor:$PATH
 
 # Go Path
 export PATH=$PATH:$(go env GOPATH)/bin/
 
-export PATH=$PATH:~/scripts
 
 # bun completions
 [ -s "/Users/home/.bun/_bun" ] && source "/Users/home/.bun/_bun"
@@ -34,10 +26,6 @@ export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 export DOTNET_ROOT="/usr/local/opt/dotnet/libexec"
 export PATH
 export CGO_ENABLED=1
-
-
-#export LD_LIBRARY_PATH=$(find /usr/local/Cellar -type d -name "lib" | tr '\n' ':')$LD_LIBRARY_PATH
-#export LD_LIBRARY_PATH=$(find /usr/local/Cellar -type d | grep -Ev "(ruby)|(node)|(python)" |  grep -Ex "/usr/local/Cellar/[a-zA-Z0-9]*/\d.(\d{1}|\d{2})\.(\d{1}|\d{2})\/(lib|include) | tr '\n' ':'")$LD_LIBRARY_PATH
 
 # Mysql Alias
 alias mysqld="mysql -h 127.0.0.1 -P 55001 -u root -proot#root"
