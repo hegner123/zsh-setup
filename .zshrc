@@ -33,6 +33,8 @@ export PATH="/Users/home/.dotnet/tools:$PATH"
 export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 export DOTNET_ROOT="/usr/local/opt/dotnet/libexec"
 export PATH
+export CGO_ENABLED=1
+
 
 #export LD_LIBRARY_PATH=$(find /usr/local/Cellar -type d -name "lib" | tr '\n' ':')$LD_LIBRARY_PATH
 #export LD_LIBRARY_PATH=$(find /usr/local/Cellar -type d | grep -Ev "(ruby)|(node)|(python)" |  grep -Ex "/usr/local/Cellar/[a-zA-Z0-9]*/\d.(\d{1}|\d{2})\.(\d{1}|\d{2})\/(lib|include) | tr '\n' ':'")$LD_LIBRARY_PATH
@@ -40,7 +42,7 @@ export PATH
 # Mysql Alias
 alias mysqld="mysql -h 127.0.0.1 -P 55001 -u root -proot#root"
 
-alias ll="eza -al"
+alias ll="eza -al  --no-time"
 alias ls="eza"
 alias f="fzf"
 alias cd="z"
@@ -56,6 +58,7 @@ alias showhosts='sudo nvim /private/etc/hosts'
 alias showzsh='nvim ~/.zshrc'
 alias start='watchexec -Nri "./bin/**" ./run.sh'
 alias newc='~/source/scripts/newc.sh'
+alias twin='tmux rename-window'
 
 . "$HOME/.cargo/env"
 
