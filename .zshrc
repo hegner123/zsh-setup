@@ -29,6 +29,10 @@ export PATH="$HOME/Documents/repos/wabt/bin:$PATH"
 # NVIM path
 export MYVIMRC="/Users/home/.config/nvim/init.lua"
 
+# Git editors
+export GIT_EDITOR="nvim -u /Users/home/.config/nvim/init.lua"
+export GIT_SEQUENCE_EDITOR="nvim -u /Users/home/.config/nvim/init.lua"
+
 # Go Path
 export PATH="$(go env GOPATH)/bin:$PATH"
 export CGO_ENABLED=1
